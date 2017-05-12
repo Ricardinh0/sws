@@ -1,0 +1,27 @@
+.table {
+  display: table; 
+  height: 100%; 
+  width: 100%; 
+  position: fixed;
+  &__cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; 
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.ratio {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+.blue-print {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}

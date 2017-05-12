@@ -1,0 +1,105 @@
+body {
+  background: #c7dfed;
+}
+body {
+  background: #c7dfed;
+}
+
+.table {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.table__cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.ratio {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.blue-print {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+.warren-background {
+  background: #cccccc;
+  border-radius: 250px;
+  position: absolute;
+  overflow: hidden;
+  width: 83.5%;
+  height: 83.5%;
+  left: 50%;
+  margin-left: -41.75%;
+  bottom: 3%;
+}
+
+.warren-suit:before,
+.warren-suit:after {
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+}
+
+.warren-suit:before {
+  bottom: -45%;
+  -webkit-transform: skewY(-34deg);
+  transform: skewY(-34deg);
+  background: #4d4d4d;
+}
+
+.warren-suit:after {
+  bottom: -45%;
+  left: 50%;
+  background: #333333;
+  -webkit-transform: skewY(34deg);
+  transform: skewY(34deg);
+}
+.table {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.table__cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.ratio {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.blue-print {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}

@@ -1,0 +1,5 @@
+@import './variables';
+
+body {
+  background: lighten($light-blue, 40%);
+}
