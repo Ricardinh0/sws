@@ -24,4 +24,7 @@
   position: absolute;
   width: 100%;
   z-index: 9999;
+  &__off {
+    display: none;
+  }
 }

@@ -37,6 +37,10 @@ body {
   z-index: 9999;
 }
 
+.blue-print__off {
+  display: none;
+}
+
 .warren-background {
   background: #cccccc;
   border-radius: 250px;
@@ -72,6 +76,52 @@ body {
   -webkit-transform: skewY(34deg);
   transform: skewY(34deg);
 }
+
+.warren-suit__lapel {
+  overflow: hidden;
+  position: absolute;
+  width: 200px;
+  height: 265px;
+  left: 50%;
+  bottom: -5%;
+  z-index: 1;
+  -webkit-transform: rotate(25deg) skewY(8deg);
+  transform: rotate(25deg) skewY(8deg);
+  margin-left: 8.5%;
+}
+
+.warren-suit__lapel:before,
+.warren-suit__lapel:after {
+  display: block;
+  content: '';
+  position: absolute;
+  background: black;
+}
+
+.warren-suit__lapel:before {
+  -webkit-transform: rotate(-32deg) skewY(-21deg);
+  transform: rotate(-32deg) skewY(-21deg);
+  top: 2px;
+  left: -51px;
+  width: 100px;
+  height: 100px;
+}
+
+.warren-suit__lapel:after {
+  -webkit-transform: rotate(-93deg) skewY(22deg);
+  transform: rotate(-93deg) skewY(22deg);
+  top: 111px;
+  left: -152px;
+  height: 160px;
+  width: 200px;
+}
+
+.warren-suit__lapel.left-lapel {
+  left: -7.5%;
+  -webkit-transform: scaleX(-1) rotate(26deg);
+  transform: scaleX(-1) rotate(26deg);
+  bottom: -3.5%;
+}
 .table {
   display: table;
   height: 100%;
@@ -102,4 +152,8 @@ body {
   position: absolute;
   width: 100%;
   z-index: 9999;
+}
+
+.blue-print__off {
+  display: none;
 }
