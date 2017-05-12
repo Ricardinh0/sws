@@ -117,10 +117,10 @@ body {
 }
 
 .warren-suit__lapel.left-lapel {
-  left: -7.5%;
+  left: -7.9%;
   -webkit-transform: scaleX(-1) rotate(26deg);
   transform: scaleX(-1) rotate(26deg);
-  bottom: -3.5%;
+  bottom: -2.9%;
 }
 .table {
   display: table;
