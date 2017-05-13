@@ -3,6 +3,18 @@
 @import './structure';
 
 .warren {
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+  }
+  *:before,
+  *:after {
+    display: block;
+    content: '';
+  }
   &-background {
     background: $shawdow-grey;
     border-radius: 250px;
@@ -18,15 +30,7 @@
     width: 50%;
     height: 100%;
     left: 50%;
-    position: absolute;
     z-index: 4;
-    overflow: hidden;
-    &:before,
-    &:after {
-      display: block;
-      content: '';
-      position: absolute;
-    }
     &:before {
       width: 85%;
       height: 60%;
@@ -45,7 +49,6 @@
       border-top-right-radius: 23%;
     }
     &__ear {
-      position: absolute;
       background: white;
       width: 35%;
       height: 20%;
@@ -54,19 +57,15 @@
       left: 19.3%;
       border-radius: 17%;
       border: $dark-blue solid 20px;
-      box-sizing: border-box;
       box-shadow: 8px 8px 0 $shawdow-grey inset;
     }
     &__eye {
-      position: absolute;
       width: 23.1%;
       height: 9.3%;
       left: 22.1%;
       top: 17.5%;
       z-index: 5;
-      overflow: hidden;
       &-pupil {
-        position: absolute;
         left: 2%;
         top: 0%;
         width: 97%;
@@ -74,12 +73,6 @@
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
         background: $black;
-      }
-      &:before,
-      &:after {
-        display: block;
-        content: '';
-        position: absolute;
       }
       &:before {
         bottom: 0;
@@ -91,17 +84,10 @@
       }
     }
     &__mouth {
-      position: absolute;
       width: 33.3%;
       height: 31.2%;
       z-index: 4;
       top: 18.4%;
-      &:before,
-      &:after {
-        display: block;
-        content: '';
-        position: absolute;
-      }
       &:before {
         background: $shawdow-grey;
         width: 100%;
@@ -121,15 +107,11 @@
       }
     }
     &__lip {
-      position: absolute;
       width: 100%;
       height: 16%;
       top: 63%;
       &:before,
       &:after {
-        display: block;
-        content: '';
-        position: absolute;
         background: white;
       }
       &:before {
@@ -146,17 +128,12 @@
     }
     &__nose,
     &__nose-shine {
-      position: absolute;
       width: 68.3%;
       height: 35.2%;
       z-index: 4;
       top: 26.4%;
-      overflow: hidden;
       &:before,
       &:after {
-        display: block;
-        content: '';
-        position: absolute;
         background: $black;
       }
       &:before {
@@ -183,77 +160,118 @@
       height: 21%;
       &:before,
       &:after {
-        display: block;
-        content: '';
-        position: absolute;
         background: $heavy-grey;
       }
     }
   }
   &-suit {
+    left: 50%;
+    width: 50%;
+    height: 100%;
     &:before {
-      display: block;
-      content: '';
-      width: 50%;
+      width: 100%;
       height: 100%;
-      position: absolute;
-    }
-    &:before {
       bottom: -45%;
-      left: 50%;
+      left: 0%;
       background: $heavy-grey;
       transform: skewY(34deg);
     }
     &__shirt {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 50%;
-      top: 0%;
+      width: 45%;
+      height: 90%;
+      left: 0%;
+      top: 44%;
       z-index: 3;
-      overflow: hidden;
       &:before {
-        display: block;
-        content: '';
-        width: 30%;
+        width: 70%;
         height: 83%;
-        position: absolute;
         transform: skewY(31deg) rotate(20deg);
         background: white;
-        top: 13%;
+        top: -22%;
         left: -18%;
       }
     }
     &__lapel {
-      overflow: hidden;
-      position: absolute;
       width: 39.5%;
       height: 53%;
-      left: 50%;
-      bottom: -5%;
+      left: 11%;
+      bottom: 0.5%;
       z-index: 1;
       transform: rotate(25deg) skewY(8deg);
       margin-left: 8.5%;
       &:before,
       &:after {
-        display: block;
-        content: '';
-        position: absolute;
         background: $black;
       }
       &:before {
         transform: rotate(-32deg) skewY(-20deg);
-        top: -1%;
-        left: -25.5%;
-        width: 50%;
+        top: -5%;
+        left: -32.5%;
+        width: 80%;
         height: 38%;
-      }
+        }
       &:after {
         transform: rotate(-93deg) skewY(22deg);
-        top: 41%;
-        left: -76%;
-        height: 60%;
+        top: 18%;
+        left: -193%;
+        height: 100%;
+        width: 184%;
+      }
+    }
+    &__tie {
+      width: 12%;
+      height: 37.4%;
+      left: 0%;
+      bottom: 0;
+      z-index: 6;
+      &-clip {
+        background: $gold;
+        top: 42%;
+        left: -47%;
         width: 100%;
+        height: 6.9%;
+        z-index: 1;
+      }
+      &:before,
+      &:after {
+        background: $secondary-red;
+      }
+      &:before {
+        width: 100%;
+        height: 50%;
+        top: -22%;
+        left: -106%;
+        transform: rotate(-45deg);
+      }
+      &:after {
+        width: 260%;
+        height: 30%;
+        top: 33%;
+        left: -139%;
+        transform: rotate(-65deg) skewX(-35deg);
+      }
+    }
+    &__pocket {
+      width: 33.5%;
+      height: 9.3%;
+      z-index: 6;
+      left: 32%;
+      bottom: 16%;
+      border-bottom: 11px solid $black;
+      &:before,
+      &:after {
+        background: white;
+        width: 60%;
+        height: 140%;
+        transform: rotate(45deg);
+      }
+      &:before {
+        top: 33%;
+        left: 12%;
+      }
+      &:after {
+        top: 61%;
+        left: 43%;
       }
     }
   }
