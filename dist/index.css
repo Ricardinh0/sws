@@ -60,7 +60,27 @@ body {
 .warren-flip {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  left: 0 !important;
+  left: 1px !important;
+}
+
+.warren-flip.warren-suit:before {
+  background: #4d4d4d;
+}
+
+.warren-flip.warren-suit .warren-suit__button {
+  background: #b3b3b3;
+}
+
+.warren-flip.warren-suit .warren-suit__tie:before,
+.warren-flip.warren-suit .warren-suit__tie:after {
+  background: #cc3300;
+}
+
+.warren-flip.warren-suit .warren-suit__tie-clip {
+  left: -17%;
+  -webkit-transform: skewX(32deg);
+  transform: skewX(32deg);
+  width: 120%;
 }
 
 .warren-background {
@@ -279,12 +299,21 @@ body {
   left: -18%;
 }
 
+.warren-suit__shirt:after {
+  background: #cccccc;
+  top: 26%;
+  width: 43%;
+  height: 12%;
+  -webkit-transform: skewY(45deg);
+  transform: skewY(45deg);
+}
+
 .warren-suit__lapel {
   width: 39.5%;
-  height: 53%;
+  height: 54%;
   left: 11%;
-  bottom: 0.5%;
-  z-index: 1;
+  bottom: -0.5%;
+  z-index: 7;
   -webkit-transform: rotate(25deg) skewY(8deg);
   transform: rotate(25deg) skewY(8deg);
   margin-left: 8.5%;
@@ -322,6 +351,15 @@ body {
 }
 
 .warren-suit__tie-clip {
+  background: #ffcc00;
+  top: 42%;
+  left: -47%;
+  width: 100%;
+  height: 6.9%;
+  z-index: 1;
+}
+
+.warren-suit__tie-clip-left {
   background: #ffcc00;
   top: 42%;
   left: -47%;
@@ -379,6 +417,16 @@ body {
 .warren-suit__pocket:after {
   top: 61%;
   left: 43%;
+}
+
+.warren-suit__button {
+  width: 8%;
+  height: 4%;
+  border-radius: 100%;
+  z-index: 10;
+  bottom: 2%;
+  left: -4%;
+  background: #808080;
 }
 .table {
   display: table;
