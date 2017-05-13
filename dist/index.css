@@ -1,8 +1,26 @@
+/*
+  Custom
+  $fur: teal;
+  $tie: purple;
+*/
+
 body {
-  background: #c7dfed;
+  background: #cee5f0;
 }
+/*
+  Custom
+  $fur: teal;
+  $tie: purple;
+*/
+
+/*
+  Custom
+  $fur: teal;
+  $tie: purple;
+*/
+
 body {
-  background: #c7dfed;
+  background: #cee5f0;
 }
 
 .table {
@@ -113,7 +131,7 @@ body {
 }
 
 .warren-face:after {
-  background: #3885b0;
+  background: #347fa4;
   width: 90%;
   height: 28.4%;
   -webkit-transform: rotate(0) skewX(38deg);
@@ -159,7 +177,7 @@ body {
   bottom: 0;
   height: 34%;
   width: 100%;
-  background: #3885b0;
+  background: #347fa4;
   z-index: 1;
   border-top-left-radius: 5em;
 }
@@ -359,15 +377,6 @@ body {
   z-index: 1;
 }
 
-.warren-suit__tie-clip-left {
-  background: #ffcc00;
-  top: 42%;
-  left: -47%;
-  width: 100%;
-  height: 6.9%;
-  z-index: 1;
-}
-
 .warren-suit__tie:before,
 .warren-suit__tie:after {
   background: #a32900;
@@ -464,3 +473,8 @@ body {
 .blue-print__off {
   display: none;
 }
+/*
+  Custom
+  $fur: teal;
+  $tie: purple;
+*/

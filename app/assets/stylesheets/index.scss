@@ -20,15 +20,15 @@
     left: 1px !important;
     &.warren-suit {
       &:before {
-        background: $medium-grey;
+        background: $xxx-grey;
       }
       .warren-suit__button {
-        background: $button-primary-grey;
+        background: $x-grey;
       }
       .warren-suit__tie {
         &:before,
         &:after {
-          background: $primary-red;
+          background: $tie;
         }
       }
       .warren-suit__tie-clip {
@@ -39,7 +39,7 @@
     }
   }
   &-background {
-    background: $shawdow-grey;
+    background: $grey;
     border-radius: 250px;
     position: absolute;
     overflow: hidden;
@@ -57,13 +57,13 @@
     &:before {
       width: 85%;
       height: 60%;
-      background: $dark-blue;
+      background: $fur;
       transform: rotate(50deg) skewy(-16deg);
       top: 11.4%;
       left: -49.9%;
     }
     &:after {
-      background: $light-blue;
+      background: lighten($fur, 5%);
       width: 90%;
       height: 28.4%;
       transform: rotate(0) skewX(38deg);
@@ -79,8 +79,8 @@
       top: 5.4%;
       left: 19.3%;
       border-radius: 17%;
-      border: $dark-blue solid 20px;
-      box-shadow: 8px 8px 0 $shawdow-grey inset;
+      border: $fur solid 20px;
+      box-shadow: 8px 8px 0 $grey inset;
     }
     &__eye {
       width: 23.1%;
@@ -95,13 +95,13 @@
         height: 100%;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
-        background: $black;
+        background: $xxxxx-grey;
       }
       &:before {
         bottom: 0;
         height: 34%;
         width: 100%;
-        background: $light-blue;
+        background: lighten($fur, 5%);
         z-index: 1;
         border-top-left-radius: 5em;
       }
@@ -112,7 +112,7 @@
       z-index: 4;
       top: 18.4%;
       &:before {
-        background: $shawdow-grey;
+        background: $grey;
         width: 100%;
         height: 36%;
         bottom: 0;
@@ -157,7 +157,7 @@
       top: 26.4%;
       &:before,
       &:after {
-        background: $black;
+        background: $xxxxx-grey;
       }
       &:before {
         width: 100%;
@@ -183,7 +183,7 @@
       height: 21%;
       &:before,
       &:after {
-        background: $heavy-grey;
+        background: $xxxx-grey;
       }
     }
   }
@@ -196,7 +196,7 @@
       height: 100%;
       bottom: -45%;
       left: 0%;
-      background: $heavy-grey;
+      background: $xxxx-grey;
       transform: skewY(34deg);
     }
     &__shirt {
@@ -214,7 +214,7 @@
         left: -18%;
       }
       &:after {
-        background: $shawdow-grey;
+        background: $grey;
         top: 26%;
         width: 43%;
         height: 12%;
@@ -231,7 +231,7 @@
       margin-left: 8.5%;
       &:before,
       &:after {
-        background: $black;
+        background: $xxxxx-grey;
       }
       &:before {
         transform: rotate(-32deg) skewY(-20deg);
@@ -255,15 +255,7 @@
       bottom: 0;
       z-index: 6;
       &-clip {
-        background: $gold;
-        top: 42%;
-        left: -47%;
-        width: 100%;
-        height: 6.9%;
-        z-index: 1;
-      }
-      &-clip-left {
-        background: $gold;
+        background: $tie-clip;
         top: 42%;
         left: -47%;
         width: 100%;
@@ -272,7 +264,7 @@
       }
       &:before,
       &:after {
-        background: $secondary-red;
+        background: darken($tie, 8%);
       }
       &:before {
         width: 100%;
@@ -295,7 +287,7 @@
       z-index: 6;
       left: 32%;
       bottom: 16%;
-      border-bottom: 11px solid $black;
+      border-bottom: 11px solid $xxxxx-grey;
       &:before,
       &:after {
         background: white;
@@ -319,7 +311,7 @@
       z-index: 10;
       bottom: 2%;
       left: -4%;
-      background: $button-secondary-grey;
+      background: $xx-grey;
     }
   }
 }
