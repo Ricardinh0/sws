@@ -63,16 +63,74 @@
       height: 31.2%;
       z-index: 4;
       top: 18.4%;
-      &:before {
+      &:before,
+      &:after {
         display: block;
         content: '';
-        background: white;
         position: absolute;
+      }
+      &:before {
+        background: $shawdow-grey;
         width: 100%;
-        height: 35%;
+        height: 36%;
         bottom: 0;
         transform: skewX(-41deg);
         left: -28%;
+      }
+      &:after {
+        background: white;
+        width: 100%;
+        height: 77%;
+        top: 0;
+        left: -26%;
+        border-bottom-left-radius: 21%;
+        border-top-right-radius: 11%;
+        transform: skewX(28deg);
+      }
+    }
+    &__nose,
+    &__nose-shine {
+      position: absolute;
+      width: 68.3%;
+      height: 35.2%;
+      z-index: 4;
+      top: 26.4%;
+      overflow: hidden;
+      &:before,
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        background: $black;
+      }
+      &:before {
+        width: 100%;
+        height: 93%;
+        bottom: -14%;
+        transform: skewX(-36deg);
+        left: -33%;
+        border-bottom-right-radius: 151%;
+      }
+      &:after {
+        width: 120%;
+        height: 21%;
+        top: 0%;
+        transform: skewX(-36deg);
+        left: -13%;
+        border-top-right-radius: 151%;
+      }
+    }
+    &__nose-shine {
+      width: 42%;
+      z-index: 5;
+      top: 29.4%;
+      height: 21%;
+      &:before,
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        background: $heavy-grey;
       }
     }
   }
