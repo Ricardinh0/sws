@@ -57,6 +57,12 @@ body {
   content: '';
 }
 
+.warren-flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  left: 0 !important;
+}
+
 .warren-background {
   background: #cccccc;
   border-radius: 250px;

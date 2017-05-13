@@ -15,6 +15,10 @@
     display: block;
     content: '';
   }
+  &-flip {
+    transform: scaleX(-1);
+    left: 0 !important;
+  }
   &-background {
     background: $shawdow-grey;
     border-radius: 250px;
