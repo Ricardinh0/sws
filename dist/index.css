@@ -87,8 +87,20 @@ body {
   -webkit-transform: rotate(0) skewX(38deg);
   transform: rotate(0) skewX(38deg);
   top: 6%;
-  left: -110px;
-  border-top-right-radius: 44px;
+  left: -37%;
+  border-top-right-radius: 23%;
+}
+
+.warren-face__ear {
+  position: absolute;
+  background: #2e7091;
+  width: 35%;
+  height: 20%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 5.4%;
+  left: 19.3%;
+  border-radius: 17%;
 }
 
 .warren-suit:before {

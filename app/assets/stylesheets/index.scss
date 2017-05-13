@@ -41,8 +41,18 @@
       height: 28.4%;
       transform: rotate(0) skewX(38deg);
       top: 6%;
-      left: -110px;
-      border-top-right-radius: 44px;
+      left: -37%;
+      border-top-right-radius: 23%;
+    }
+    &__ear {
+      position: absolute;
+      background: $dark-blue;
+      width: 35%;
+      height: 20%;
+      transform: rotate(45deg);
+      top: 5.4%;
+      left: 19.3%;
+      border-radius: 17%;
     }
   }
   &-suit {
