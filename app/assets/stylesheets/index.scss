@@ -21,16 +21,28 @@
     position: absolute;
     z-index: 4;
     overflow: hidden;
-    &:before {
+    &:before,
+    &:after {
       display: block;
       content: '';
       position: absolute;
+    }
+    &:before {
       width: 85%;
       height: 60%;
       background: $dark-blue;
       transform: rotate(50deg) skewy(-16deg);
       top: 11.4%;
       left: -49.9%;
+    }
+    &:after {
+      background: $light-blue;
+      width: 90%;
+      height: 28.4%;
+      transform: rotate(0) skewX(38deg);
+      top: 6%;
+      left: -110px;
+      border-top-right-radius: 44px;
     }
   }
   &-suit {

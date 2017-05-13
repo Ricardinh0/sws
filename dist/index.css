@@ -63,10 +63,14 @@ body {
   overflow: hidden;
 }
 
-.warren-face:before {
+.warren-face:before,
+.warren-face:after {
   display: block;
   content: '';
   position: absolute;
+}
+
+.warren-face:before {
   width: 85%;
   height: 60%;
   background: #2e7091;
@@ -74,6 +78,17 @@ body {
   transform: rotate(50deg) skewy(-16deg);
   top: 11.4%;
   left: -49.9%;
+}
+
+.warren-face:after {
+  background: #3885b0;
+  width: 90%;
+  height: 28.4%;
+  -webkit-transform: rotate(0) skewX(38deg);
+  transform: rotate(0) skewX(38deg);
+  top: 6%;
+  left: -110px;
+  border-top-right-radius: 44px;
 }
 
 .warren-suit:before {
