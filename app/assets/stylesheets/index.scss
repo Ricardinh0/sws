@@ -81,6 +81,13 @@
       border-radius: 17%;
       border: $fur solid 20px;
       box-shadow: 8px 8px 0 $grey inset;
+      animation: ear-wiggle 5.7s ease-out infinite forwards;
+      @keyframes ear-wiggle {
+        0.00% { top: 5.4%; }
+        2% { top: 5.6%; }
+        4% { top: 5.4%; }
+        100% { top: 5.4%; }
+      }
     }
     &__eye {
       width: 23.1%;
@@ -90,12 +97,19 @@
       z-index: 5;
       &-pupil {
         left: 2%;
-        top: 0%;
+        bottom: 0%;
         width: 97%;
         height: 100%;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
         background: $xxxxx-grey;
+        animation: blink 5.7s ease-in-out infinite forwards;
+        @keyframes blink {
+          0.00% { height: 100%; }
+          2% { height: 35%; }
+          4% { height: 100%; }
+          100% { height: 100%; }
+        }
       }
       &:before {
         bottom: 0;
@@ -133,6 +147,13 @@
       width: 100%;
       height: 16%;
       top: 63%;
+      animation: lip-service 5.7s ease-in-out infinite forwards;
+      @keyframes lip-service {
+        0.00% { height: 16%; }
+        2% { height: 14%; }
+        4% { height: 16%; }
+        100% { height: 16%; }
+      }
       &:before,
       &:after {
         background: white;
@@ -155,6 +176,13 @@
       height: 35.2%;
       z-index: 4;
       top: 26.4%;
+      animation: nose-wiggle 5.7s ease-in infinite forwards;
+      @keyframes nose-wiggle {
+        0.00% { top: 26.4%; }
+        2% { top: 24.4%; }
+        4% { top: 26.4%; }
+        100% { top: 26.4%; }
+      }
       &:before,
       &:after {
         background: $xxxxx-grey;
