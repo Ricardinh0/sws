@@ -35,6 +35,7 @@ body {
   position: absolute;
   width: 100%;
   z-index: 9999;
+  opacity: .4;
 }
 
 .blue-print__off {
@@ -53,8 +54,29 @@ body {
   bottom: 3%;
 }
 
-.warren-suit:before,
-.warren-suit:after {
+.warren-face {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.warren-face:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 85%;
+  height: 60%;
+  background: #2e7091;
+  -webkit-transform: rotate(50deg) skewy(-16deg);
+  transform: rotate(50deg) skewy(-16deg);
+  top: 11.4%;
+  left: -49.9%;
+}
+
+.warren-suit:before {
   display: block;
   content: '';
   width: 50%;
@@ -64,17 +86,33 @@ body {
 
 .warren-suit:before {
   bottom: -45%;
-  -webkit-transform: skewY(-34deg);
-  transform: skewY(-34deg);
-  background: #4d4d4d;
-}
-
-.warren-suit:after {
-  bottom: -45%;
   left: 50%;
   background: #333333;
   -webkit-transform: skewY(34deg);
   transform: skewY(34deg);
+}
+
+.warren-suit__shirt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 0%;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.warren-suit__shirt:before {
+  display: block;
+  content: '';
+  width: 30%;
+  height: 83%;
+  position: absolute;
+  -webkit-transform: skewY(31deg) rotate(20deg);
+  transform: skewY(31deg) rotate(20deg);
+  background: white;
+  top: 13%;
+  left: -18%;
 }
 
 .warren-suit__lapel {
@@ -95,14 +133,14 @@ body {
   display: block;
   content: '';
   position: absolute;
-  background: black;
+  background: #1a1a1a;
 }
 
 .warren-suit__lapel:before {
-  -webkit-transform: rotate(-32deg) skewY(-21deg);
-  transform: rotate(-32deg) skewY(-21deg);
-  top: 2px;
-  left: -25%;
+  -webkit-transform: rotate(-32deg) skewY(-20deg);
+  transform: rotate(-32deg) skewY(-20deg);
+  top: -1%;
+  left: -25.5%;
   width: 50%;
   height: 38%;
 }
@@ -110,17 +148,10 @@ body {
 .warren-suit__lapel:after {
   -webkit-transform: rotate(-93deg) skewY(22deg);
   transform: rotate(-93deg) skewY(22deg);
-  top: 42%;
-  left: -75%;
+  top: 41%;
+  left: -76%;
   height: 60%;
   width: 100%;
-}
-
-.warren-suit__lapel.left-lapel {
-  left: -7.9%;
-  -webkit-transform: scaleX(-1) rotate(26deg);
-  transform: scaleX(-1) rotate(26deg);
-  bottom: -2.9%;
 }
 .table {
   display: table;
@@ -152,6 +183,7 @@ body {
   position: absolute;
   width: 100%;
   z-index: 9999;
+  opacity: .4;
 }
 
 .blue-print__off {
